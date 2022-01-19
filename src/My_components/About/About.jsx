@@ -10,6 +10,7 @@ import css from "../Images/css.gif";
 import bootstrap from "../Images/bootstrap.gif";
 import javascript from "../Images/javascript.gif";
 import react from "../Images/react.gif";
+import web_dev from "../Images/web_dev.gif";
 
 export default function Home() {
     var today = new Date();
@@ -30,19 +31,21 @@ export default function Home() {
     return (
         <div className="Home-Page">
             <div className="update-Box">
-                <h3 className="update-Box-h3">Today is : {daylist[day]}</h3>                
-                <h4 className="update-Box-h4">{date}</h4>
-                <h4 onClick={clock} className="update-Box-h4">{Time}</h4>
+                <p>Today is : {daylist[day]}, {date} Time : {Time}</p>
             </div>
             <img className="profile-picture" src={dp} alt="Profile picture" />
             <div className="About">
                 <h1 className="About-h1">Hi, Welcome to my Portfolio.</h1>
-                <textarea readOnly>An enthusiastic fresher with highly motivated and leadership skills having a bachelors of Engineering degree
+                <p>An enthusiastic fresher with highly motivated and leadership skills having a bachelors of Engineering degree
                 (B.Tech) in Computer Science and Technology from Maulana Abul Kalam Azad University of Technology, West Bengal.
                 I am highly driven by the evolving technologies around me and i find it fun to learn about them as much i can.
                 Currently i am seeking for opportunities to work under some organization where i can contribute and also further develop my 
                 skills even further. I am always open to new ideas and solutions if it has enough logic in it.
-                </textarea>
+                </p>
+                <div className="About-image-container">
+                <img className="About-image" src={web_dev} alt="web-developement gif"></img>
+                </div>
+                
                 <h3 className="About-h3">Some of my skills include : </h3>
                 <ul>
                     <li className="heading">Programming Language's like
