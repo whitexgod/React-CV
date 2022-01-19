@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './My_components/Nav/Nav'; 
+import Contact from "./My_components/Contact_info/Contact";
+import About from "./My_components/About/About";
+import Projects from "./My_components/Projects/Projects";
+import React, {useState,useEffect} from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
+  const year = new Date().getFullYear();
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Nav/>    
+        <Routes>
+          <Route path="/" exact element={<About/>} />
+          <Route path="/project" element={<Projects/>} />
+          <Route path="/contact" element={<Contact/>} />
+        </Routes> 
+      </div>
+    </Router>
   );
 }
 
