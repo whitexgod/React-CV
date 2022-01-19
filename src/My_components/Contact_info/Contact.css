@@ -1,11 +1,129 @@
-.Contact-Page
-{
-    padding: 0px;
-    margin: 0px;
-}
-  
-.container {
+.Contact-Page{
+    padding-top: 80px;
+    padding-bottom: 0px;
     width: 100%;
-    height: fit-content;
-    padding-top: 150px;
+    min-height: 100vh; 
+}
+.Banner{
+    text-align: center;
+    align-items: center;
+    min-height: 45vh;
+}
+.Contact-page-banner{
+    border-radius: 20%;
+    width: 400px;
+    height: 25%;
+    transition: all 3s ease 0s;
+    animation: page-banner 5s infinite ;
+}
+@keyframes page-banner {
+    0%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: 50px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background: #BE93C5;  
+    background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  
+    background: linear-gradient(to right, #7BC6CC, #BE93C5); 
+    color : white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-info{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+.card{
+    background: #2f3542;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33%-20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.card-icon{
+    font-size: 28px;
+    background: #ff6348;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+.card:hover .card-icon{
+    background: none;
+    color: #ff6348;
+    transform: scale(1.6);
+}
+.card p{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+.card a{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+    text-decoration: none;
+}
+.card:hover p{
+    max-height: 40px;
+    opacity: 1;
+}
+.card:hover a{
+    max-height: 40px;
+    opacity: 1;
+}
+.Foot{
+    margin-top: 200px;
+}
+
+@media all and (max-width:800px){
+    .contact-info{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}
+
+@media all and (max-width: 900px){
+    .Banner{
+        min-height: 25vh;
+    }
+    .Contact-page-banner{
+        width: 40%;
+    }
 }

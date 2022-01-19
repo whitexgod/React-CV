@@ -10,7 +10,6 @@
     background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color : white;
-    overflow: auto;
 }
 
 a{
@@ -133,10 +132,17 @@ a{
         font-size: 10px;; 
     }
     .About{
-        margin-left: 100px;
-        margin-top: 150px;
+        margin-left: 50px;
+        margin-top: 200px;
         margin-right: 50px;
         margin-bottom: 0px;
+    }
+    .About ul{
+        text-align: center;
+        align-items: center;
+    }
+    .About li{
+        margin-left: 0px;
     }
     .About-image{
         width: 80%;
