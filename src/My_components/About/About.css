@@ -30,6 +30,7 @@ a{
 }
 .update-Box {
     letter-spacing: 1px;
+    line-height: .8rem;
     position: fixed;
     top: 0;
     right: 0;
@@ -41,7 +42,7 @@ a{
     background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: .7;
+    opacity: .6;
 }
 
 .About{
@@ -138,10 +139,7 @@ a{
     }
     .update-Box {
         letter-spacing: 1px;
-        color: rgba(255,255,255,.5);
         position: fixed;
-        top: 0;
-        right: 0;
         margin-top: 80px;
         margin-right: 15px;
         font-size: 12px;

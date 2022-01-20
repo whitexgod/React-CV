@@ -31,7 +31,8 @@ export default function Home() {
     return (
         <div className="Home-Page">
             <div className="update-Box">
-                <p>Today is : {daylist[day]}, {date} Time : {Time}</p>
+                <p>Time : {Time}</p>
+                <p>{date}</p>
             </div>
             <img className="profile-picture" src={dp} alt="Profile picture" />
             <div className="About">
