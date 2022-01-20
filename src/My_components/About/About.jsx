@@ -15,9 +15,7 @@ import web_dev from "../Images/web_dev.gif";
 export default function Home() {
     var today = new Date();
     var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-    var day = today.getDay();
     let time = new Date().toLocaleTimeString('it-IT');
-    var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
     const [Time, setTime] = useState(time);
     function clock(){
         let time = new Date().toLocaleTimeString('it-IT');
@@ -30,10 +28,6 @@ export default function Home() {
 
     return (
         <div className="Home-Page">
-            <div className="update-Box">
-                <p>Time : {Time}</p>
-                <p>{date}</p>
-            </div>
             <img className="profile-picture" src={dp} alt="Profile picture" />
             <div className="About">
                 <h1 className="About-h1">Hi, Welcome to my Portfolio.</h1>

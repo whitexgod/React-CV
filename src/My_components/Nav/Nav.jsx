@@ -1,11 +1,24 @@
 import "./Nav.css"
-import React from "react";
+import React,{useState,useEffect} from "react";
 import {Link} from 'react-router-dom';
 
 function Nav() {
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    let time = new Date().toLocaleTimeString('it-IT');
+    const [Time, setTime] = useState(time);
+    function clock(){
+        let time = new Date().toLocaleTimeString('it-IT');
+        setTime(time);
+    }
+    useEffect(()=>{
+        clock();
+        setInterval(clock, 1000);
+    },[])
+
     return( 
         <div className="header fixed-top scrolling-navbar">
-            <h3 className="header-h3">Tuhin's Portfolio</h3>
+            <h3 className="header-h3">Tuhin's Portfolio || {date} || {Time}</h3>
             <nav>
                 <ul className="nav__links">
                     <li className="nav">
