@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
+html{
+    padding: 0;
+    margin: 0;
+}
 .Home-Page
 {
     padding-top: 80px;
     padding-bottom: 0px;
+    margin: 0;
     width: 100%;
     min-height: 100vh;
     background: #BE93C5;  /* fallback for old browsers */
@@ -26,10 +30,18 @@ a{
 }
 .update-Box {
     letter-spacing: 1px;
-    color: #0088a9;
-    float: right;
-    margin: 20px;
-    font-size: 15px;; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 100px;
+    font-size: 17px;
+    background: #121FCF;
+    background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .7;
 }
 
 .About{
@@ -126,10 +138,13 @@ a{
     }
     .update-Box {
         letter-spacing: 1px;
-        color: #0088a9;
-        float: right;
-        margin: 15px;
-        font-size: 10px;; 
+        color: rgba(255,255,255,.5);
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-top: 80px;
+        margin-right: 15px;
+        font-size: 12px;
     }
     .About{
         margin-left: 50px;

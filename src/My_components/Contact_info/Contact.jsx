@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer"
 
 export default function Contact() {
     return (
+        <>
         <div className="Contact-Page">
             <div className="Banner">
              <img className="Contact-page-banner" src={contact} alt="contact gif"></img>
@@ -27,7 +28,8 @@ export default function Contact() {
                     <p>Email : tuhinmukherjee744@gmail.com</p>
                 </div>
              </div>
-             <Footer className="Foot" /> 
+        <Footer className="Foot" /> 
         </div>
+        </>
     )
 }

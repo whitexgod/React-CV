@@ -43,9 +43,11 @@
 }
 
 .nav:hover{
+    transition: all 0.2s ease 0s;
     color: #0088a9;
     text-shadow: #E5E5BE;
     font-size: large;
+    text-decoration: none;
 }
 
 .btn{

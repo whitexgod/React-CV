@@ -1,11 +1,125 @@
-.Project-Page
-{
-    padding: 0px;
-    margin: 0px;
-}
-  
-.container {
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+.Project-Page{
+    min-height: 100vh;
     width: 100%;
-    height: fit-content;
-    padding-top: 150px;
+}
+.dark-mode{
+    display: flex;
+    padding: 20px;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10%;
+}
+.Project-h2-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Project-h2{
+    color:#F0FFFF;
+    text-align: center;
+    font-size: 6em;
+    font-weight: 300;
+    letter-spacing: 6px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px 10px;
+    font-family: 'Dongle', sans-serif;
+}
+.Project-h2 span{
+    transition: .5s;
+}
+.Project-h2:hover span:nth-child(1){
+    margin-right: 10px;
+}
+.Project-h2:hover span:nth-child(2){
+    margin-left: 20px;
+}
+.Project-h2:hover span:nth-child(3){
+    margin-left: 40px;
+}
+.Project-h2:hover span:nth-child(4){
+    margin-left: 80px;
+}
+.Project-h2:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #00f1ff,
+                0 0 20px #00f1ff,
+                0 0 40px #00f1ff,
+                0 0 80px #00f1ff,
+                0 0 120px #00f1ff,
+                0 0 160px #00f1ff;
+
+}
+.Project-body{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.Project-card-box{
+    margin: 10px 30px;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.Project-card{
+    margin: 30px;
+    padding: 10px;
+    width: 18rem;
+    border: 2px solid #00f1ff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Project-card:hover {
+    transition: all 0.5s ease 0s;
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rbga(0,0,0,0.2);
+    background: linear-gradient(45deg, #b95ce4, #4f29cd);
+}
+.card-title{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.card-title:hover {
+    transition: all 0.2s ease 0s;
+    color: #0088a9;
+    text-shadow: #E5E5BE;
+    cursor: pointer;
+}
+.card-body:hover{
+    color: white;
+}
+.card-body a:hover{
+    transition: all 0.2s ease 0s;
+    color: white;
+    text-shadow: #E5E5BE;
+    text-decoration: none;
+    color: #444444;
+    background: #FFFFFF;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    color: #444444;
+    background: #FFFFFF;
+}
+
+@media all and (max-width: 900px){
+    .Project-h2{
+        font-size: 2.5em;
+    }
+    .Project-h2 span{
+        transition: .3s;
+    }
+    .Project-h2:hover span:nth-child(1){
+        margin-right: 5px;
+    }
+    .Project-h2:hover span:nth-child(2){
+        margin-left: 10px;
+    }
+    .Project-h2:hover span:nth-child(3){
+        margin-left: 20px;
+    }
+    .Project-h2:hover span:nth-child(4){
+        margin-left: 40px;
+    }
 }

@@ -1,9 +1,4 @@
-.Contact-Page{
-    padding-top: 80px;
-    padding-bottom: 0px;
-    width: 100%;
-    min-height: 100vh; 
-}
+
 .Banner{
     text-align: center;
     align-items: center;
@@ -34,16 +29,18 @@
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
-body{
+.Contact-Page{
+    min-height: 100vh;
+    padding: 100px;;
     background: #BE93C5;  
     background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  
     background: linear-gradient(to right, #7BC6CC, #BE93C5); 
     color : white;
     min-height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .contact-info{
     display: flex;
     width: 100%;
@@ -51,8 +48,11 @@ body{
     align-items: center;
     justify-content: center;
     padding: 0 20px;
+    text-align: center;
 }
 .card{
+    position: relative;
+    left: 20%;
     background: #2f3542;
     padding: 0 20px;
     margin: 0 10px;
@@ -124,6 +124,9 @@ body{
         min-height: 25vh;
     }
     .Contact-page-banner{
-        width: 40%;
+        width: 80%;
+    }
+    .card{
+        left: 0;
     }
 }
