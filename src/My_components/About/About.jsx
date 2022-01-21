@@ -18,7 +18,7 @@ export default function Home() {
       <img className="profile-picture" src={dp} alt="Profile picture" />
       <div className="About">
         <h1 className="About-h1">
-          Myself, Tuhin Mukherjee and Welcome to my Portfolio.
+          Myself, <span>Tuhin Mukherjee</span> and <span>Welcome to my Portfolio.</span>
         </h1>
         <p>
           The human brain is a crazy place, and there are the things that
