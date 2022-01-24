@@ -78,6 +78,9 @@
     box-shadow: 0 10px 40px rbga(0,0,0,0.2);
     background: linear-gradient(45deg, #b95ce4, #4f29cd);
 }
+.Project-banner .Project-card:hover{
+    background: linear-gradient(45deg, #B38728, #FBF5B7);
+}
 .card-title{
     font-weight: bold;
     font-size: 1.5em;
@@ -102,7 +105,18 @@
     color: #444444;
     background: #FFFFFF;
 }
-
+.Project-banner{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+.Project-banner-h3{
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
 @media all and (max-width: 900px){
     .Project-h2{
         font-size: 2.5em;

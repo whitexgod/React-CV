@@ -2,6 +2,7 @@ import "./Projects.css";
 import React, { useState, useEffect } from "react";
 import projects_list from "./project_list";
 import Footer from "../Footer/Footer";
+import favorite_list from "./Favorite_list";
 
 export default function Projects() {
   const default_style = {
@@ -19,6 +20,26 @@ export default function Projects() {
     return (
     <div className="Project-card-box">
       <div className="Project-card">
+        <img className="card-img-top" src={props.image} alt="image"></img>
+        <div className="card-body">
+          <h5 className="card-title">{props.title}</h5>
+          <p className="card-text">{props.description}</p>
+        </div>
+        <div class="card-body">
+          <a href={props.url1} target="_blank" className="card-link">
+            Github link
+          </a>
+          { props.url2!=""? <a href={props.url2} target="_blank" className="card-link">Heroku app Link</a>: "" }
+        </div>
+      </div>
+      </div>
+    );
+  }
+  function createFavCard(props) {
+    return (
+    <div className="Project-card-box">
+      <div className="Project-card">
+      <i className="fas fa-star" style={{color:"yellow"}}></i>
         <img className="card-img-top" src={props.image} alt="image"></img>
         <div className="card-body">
           <h5 className="card-title">{props.title}</h5>
@@ -65,7 +86,12 @@ export default function Projects() {
           <span>JECT'S</span>
         </h2>
       </div>
-      <div className="Project-body">{projects_list.map(createCard)}</div>
+      <div className="Project-body">
+      <div className="Project-banner">
+          {favorite_list.map(createFavCard)}
+      </div>
+      {projects_list.map(createCard)}
+      </div>
     <Footer/>
     </div>
   );

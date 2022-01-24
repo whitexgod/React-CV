@@ -6,12 +6,21 @@ const projects_list = [
         url2: "",
         description : "This system will help the user by giving suggestion on which book they should read next or what are the similar type of books on comparing with the user entered book's name.",
     },
+
     {
         title: "Zomato Price Predictor",
         image: "https://i0.wp.com/codemyui.com/wp-content/uploads/2017/06/3d-budget-slider-with-price.gif?fit=880%2C440&ssl=1",
         url1: "https://github.com/whitexgod/Zomato-Price-Predictor",
         url2: "",
         description: "Predicts the average price of restaurants using Linear-regression Algorithm."
+    }, 
+
+    {
+        title: "Salary Predictor",
+        image: "https://media.tenor.com/images/d002e65ed45167f5c54cf19fa817d1e0/tenor.gif",
+        url1: "https://github.com/whitexgod/Salary-Predictor",
+        url2: "",
+        description: "Predicts the salary on the basis of year experience using Linear-regression Algorithm ."
     },
     {
         title: "Email Spam Classifier",
@@ -19,13 +28,6 @@ const projects_list = [
         url1: "https://github.com/whitexgod/Email-Spam-Classifier",
         url2: "",
         description: "This will detect if a email is spam or not."
-    },
-    {
-        title: "Salary Predictor",
-        image: "https://media.tenor.com/images/d002e65ed45167f5c54cf19fa817d1e0/tenor.gif",
-        url1: "https://github.com/whitexgod/Salary-Predictor",
-        url2: "",
-        description: "Predicts the salary on the basis of year experience using Linear-regression Algorithm ."
     },
     {
         title: "Project-Titanic",
@@ -47,28 +49,7 @@ const projects_list = [
         url1: "https://github.com/whitexgod/Covid-19",
         url2: "https://covid19-analysis123.herokuapp.com/",
         description: "Working with the pandemic data set of 2020 outbreak and deploying a webpage in heroku with dynamic graphs and useful data."
-    },
-    {
-        title: "Movie Recommendation System",
-        image: "https://miro.medium.com/max/2400/1*2DCgG_y9aYFax8KbDziqpA.gif",
-        url1: "https://github.com/whitexgod/Movie-Recommendation-System",
-        url2: "",
-        description: "A simple movie recommended system using corr and knn ."
-    },
-    {
-        title: "Movie Sentiment Review web application",
-        image: "https://media.giphy.com/media/XZaiQf3IfMcLoXjqmt/giphy.gif",
-        url1: "https://github.com/whitexgod/movie-sentiment-review-app",
-        url2: "https://movie-review-sentiment-app.herokuapp.com/",
-        description: "A simple web application which uses a ML algorithm to predict the user entered movie review sentiment"
-    },
-    {
-        title: "Personal Assistant",
-        image: "https://annagodeassi.com/wp-content/uploads/2018/06/personalAssistantGIFmouths-2.gif",
-        url1: "https://github.com/whitexgod/simple-Assistant-",
-        url2: "",
-        description: "A simple pyhton and database linked interactive assistant program for PC."
-    },
+    },    
     {
         title: "Selling price Predictor",
         image: "https://media1.giphy.com/media/3o84TVleroFo3DvGMw/giphy.gif",
