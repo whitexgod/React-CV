@@ -118,6 +118,15 @@ export default function Home() {
               <li>
                 <a
                   target="_blank"
+                  href="https://reactjs.org/docs/jsx-in-depth.html" rel="noreferrer"
+                >
+                  JSX
+                </a>
+                <img className="skills-image" src="https://miro.medium.com/max/3440/1*i_Vj3gs7QO9fjcxELK2c2g.png" alt="jsx image"></img>
+              </li>
+              <li>
+                <a
+                  target="_blank"
                   href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" rel="noreferrer"
                 >
                   BootStrap
@@ -129,6 +138,10 @@ export default function Home() {
                   rel="noreferrer"
                 ></img>
               </li>
+            </ul>
+          </li>
+          <li className="heading">Framework's like : 
+          <ul className="program-list">
               <li>
                 <a
                   target="_blank"
@@ -138,7 +151,7 @@ export default function Home() {
                 </a>
                 <img className="skills-image" src={react} alt="react.gif" rel="noreferrer"></img>
               </li>
-            </ul>
+          </ul>
           </li>
           <li className="heading">Machine Learning. </li>
           <li className="heading">Automation with Python. </li>
