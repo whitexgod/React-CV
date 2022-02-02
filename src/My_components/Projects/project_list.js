@@ -14,7 +14,6 @@ const projects_list = [
         url2: "",
         description: "Predicts the average price of restaurants using Linear-regression Algorithm."
     }, 
-
     {
         title: "Salary Predictor",
         image: "https://media.tenor.com/images/d002e65ed45167f5c54cf19fa817d1e0/tenor.gif",
@@ -50,13 +49,6 @@ const projects_list = [
         url2: "https://covid19-analysis123.herokuapp.com/",
         description: "Working with the pandemic data set of 2020 outbreak and deploying a webpage in heroku with dynamic graphs and useful data."
     },    
-    {
-        title: "Selling price Predictor",
-        image: "https://media1.giphy.com/media/3o84TVleroFo3DvGMw/giphy.gif",
-        url1: "https://github.com/whitexgod/overall-selling-price-predictor-app",
-        url2: "https://selling-price-predictor.herokuapp.com/",
-        description: "This model can predict the selliing price of mobile/pc/car/bike. "
-    },
     {
         title: "React JS",
         image: "https://revelry.co/wp-content/uploads/2019/05/react-native-UX-design.gif",
