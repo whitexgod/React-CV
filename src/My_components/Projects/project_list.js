@@ -46,7 +46,7 @@ const projects_list = [
         title: "Project-Corona virus analysis in heroku app",
         image: "https://media2.giphy.com/media/dVuyBgq2z5gVBkFtDc/giphy.gif",
         url1: "https://github.com/whitexgod/Covid-19",
-        url2: "https://covid19-analysis123.herokuapp.com/",
+        url2: "",
         description: "Working with the pandemic data set of 2020 outbreak and deploying a webpage in heroku with dynamic graphs and useful data."
     },    
     {
