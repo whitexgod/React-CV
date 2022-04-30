@@ -33,7 +33,7 @@ const favorite_list =[
         image: "https://i.pinimg.com/originals/bf/a7/a0/bfa7a0ddfc3cc35b6b619205fb4f0e81.gif",
         url1: "https://github.com/whitexgod/Crypto_app",
         url2: "https://crypcity.herokuapp.com/",
-        description: "This model can predict the selliing price of mobile/pc/car/bike. "
+        description: "This is a react js framework based app designed to follow up the crypto market "
     },
     
 ]
